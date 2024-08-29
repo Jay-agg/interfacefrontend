@@ -14,7 +14,7 @@ import {
 const Sidebar = () => {
   return (
     <div className="w-20 bg-white h-screen flex flex-col items-center py-4 shadow-md pt-10 border border-gray-200">
-      <Link href="/dashboard" className="mb-6">
+      <Link href="/Dashboard" className="mb-6">
         <Home className="w-6 h-6 text-gray-400 hover:text-indigo-600" />
       </Link>
       <Search className="w-6 h-6 text-gray-400 hover:text-indigo-600 mb-6" />
