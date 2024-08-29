@@ -54,7 +54,7 @@ const TableView = () => {
   ];
 
   return (
-    <div className="p-8">
+    <div className="p-8 bg-slate-50 text-black w-screen">
       <h1 className="text-2xl font-bold mb-6">Table View</h1>
       <h2 className="text-lg font-semibold mb-4">Order & Payment Received</h2>
       <table className="w-full border-collapse">

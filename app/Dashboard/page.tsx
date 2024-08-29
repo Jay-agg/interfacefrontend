@@ -28,14 +28,14 @@ const Dashboard = () => {
   const COLORS = ["#8884d8", "#82ca9d", "#ffc658", "#ff7300", "#0088FE"];
 
   return (
-    <div className="p-8 ml-5 w-screen bg-white">
-      <h1 className="text-2xl font-bold mb-6">Dashboard</h1>
+    <div className="p-16 w-screen bg-white">
+      <h1 className="text-2xl font-bold mb-6 text-black">Dashboard</h1>
       <div className="grid grid-cols-3 gap-4 mb-8">
         <MetricCard title="Previous Month Order" value="3,458" link="/" />
         <MetricCard
           title="Order & Payment Received"
           value="153"
-          link="/TableView"
+          link="/Table"
         />
         <MetricCard title="Payment Pending" value="229" link="/" />
         <MetricCard title="Tolerance rate breached" value="3" link="/" />
@@ -43,8 +43,8 @@ const Dashboard = () => {
         <MetricCard title="Negative Payout" value="666" link="/" />
       </div>
       <div className="grid grid-cols-2 gap-8">
-        <div>
-          <h2 className="text-lg font-semibold mb-4">
+        <div className="shadow-md p-4 rounded-md">
+          <h2 className="text-lg font-semibold text-black mb-4">
             Reimbursements by Dispute Type - last 30 days
           </h2>
           <ResponsiveContainer width="100%" height={300}>
@@ -53,8 +53,8 @@ const Dashboard = () => {
             </BarChart>
           </ResponsiveContainer>
         </div>
-        <div>
-          <h2 className="text-lg font-semibold mb-4">
+        <div className="shadow-md p-4 rounded-md">
+          <h2 className="text-lg text-black font-semibold mb-4">
             % Reimbursements by Dispute Type - this year
           </h2>
           <ResponsiveContainer width="100%" height={300}>
@@ -93,9 +93,9 @@ interface MetricCardProps {
 
 const MetricCard = ({ title, value, link }: MetricCardProps) => (
   <div className="bg-white p-4 rounded-lg shadow">
-    <h3 className="text-sm text-gray-500 mb-2">{title}</h3>
+    <h3 className="text-sm text-black mb-2">{title}</h3>
     <div className="flex justify-between items-center">
-      <span className="text-2xl font-bold">{value}</span>
+      <span className="text-2xl font-bold text-black">{value}</span>
       {link && (
         <Link href={link} className="text-indigo-600">
           &gt;

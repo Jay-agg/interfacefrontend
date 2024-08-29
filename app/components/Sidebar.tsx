@@ -13,8 +13,7 @@ import {
 
 const Sidebar = () => {
   return (
-    <div className="w-16 bg-white h-screen flex flex-col items-center py-4 shadow-md">
-      <div className="w-10 h-10 bg-indigo-600 rounded-lg mb-8"></div>
+    <div className="w-20 bg-white h-screen flex flex-col items-center py-4 shadow-md pt-10 border border-gray-200">
       <Link href="/dashboard" className="mb-6">
         <Home className="w-6 h-6 text-gray-400 hover:text-indigo-600" />
       </Link>
